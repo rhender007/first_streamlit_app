@@ -120,7 +120,7 @@ try:
         streamlit.error("Please provide a fruit to add.")
     else:
         resp = insert_row_snowflake(new_fruit)
-        streamlit.text(resp)
+        streamlit.dataframe(resp)
 except URLError as e:
     streamlit.error()
     
