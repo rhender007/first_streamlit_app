@@ -91,17 +91,17 @@ if streamlit.button('Get Fruit Load List'):
 
     
     
-    streamlit.header("Add a Fruit!")
-try:
-    fruit_choice = streamlit.text_input('Add a fruit here')
-    if not fruit_choice:
-      streamlit.error("Please select a fruit to add.")
-    else:
-        back_from_function = get_fruityvice_data(fruit_choice)
-        streamlit.dataframe(back_from_function)
+#     streamlit.header("Add a Fruit!")
+# try:
+#     fruit_choice = streamlit.text_input('Add a fruit here')
+#     if not fruit_choice:
+#       streamlit.error("Please select a fruit to add.")
+#     else:
+#         back_from_function = get_fruityvice_data(fruit_choice)
+#         streamlit.dataframe(back_from_function)
       
-except URLError as e:
-    streamlit.error()
+# except URLError as e:
+#     streamlit.error()
 
 
 
