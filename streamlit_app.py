@@ -89,16 +89,40 @@ if streamlit.button('Get Fruit Load List'):
 
     
 
+    
+    
+    streamlit.header("Add a Fruit!")
+try:
+    fruit_choice = streamlit.text_input('Add a fruit here')
+    if not fruit_choice:
+      streamlit.error("Please select a fruit to add.")
+    else:
+        back_from_function = get_fruityvice_data(fruit_choice)
+        streamlit.dataframe(back_from_function)
+      
+except URLError as e:
+    streamlit.error()
 
 
 
-
-
-# debug stop here for now
-#streamlit.stop()
-fruit_add = streamlit.text_input('What fruit would you like added?')
-insert_row_snowflake(fruit_add)
-streamlit.write('Thanks for adding ', fruit_add)
+# Add a button to insert the fruit
+if streamlit.button('Add fruit'):
+    # my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+    # debug stop here for now
+    #streamlit.stop()
+    #fruit_add = streamlit.text_input('What fruit would you like added?')
+    #insert_row_snowflake(new_fruit)
+    #streamlit.write('Thanks for adding ', new_fruit)
+    
+    try:
+        fruit_choice = streamlit.text_input('What fruit would you like to add?')
+        if not fruit_choice:
+            streamlit.error("Please provide a fruit to add.")
+            else:
+                insert_row_snowflake(new_fruit)
+    except URLError as e:
+        streamlit.error()
+    
 # TODO: fix this insert
 # my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
