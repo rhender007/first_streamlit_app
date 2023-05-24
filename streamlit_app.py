@@ -50,5 +50,8 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 
-fruit_choice = streamlit.text_input('What fruit would you like added?')
-streamlit.write('Thanks for adding ', fruit_choice)
+fruit_add = streamlit.text_input('What fruit would you like added?')
+streamlit.write('Thanks for adding ', fruit_add)
+
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+
