@@ -117,6 +117,7 @@ if streamlit.button('Get Fruit Load List'):
     #streamlit.write('Thanks for adding ', new_fruit)
     
 try:
+    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
     new_fruit = streamlit.text_input('What fruit would you like to add?')
     if not new_fruit:
         streamlit.error("Please provide a fruit to add.")
