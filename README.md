@@ -41,6 +41,8 @@ SELECT 'DORA_IS_WORKING' as step
 
 select current_region();
 
+--IT36598
+SELECT CURRENT_ACCOUNT();
 
 --Here's code to recreate the "Like a Window" Stage in the DEMO_DB. You can just use the stage from GARDEN_PLANTS if you are using the same Trial account from an earlier workout. 
 create stage demo_db.public.like_a_window_into_an_s3_bucket
