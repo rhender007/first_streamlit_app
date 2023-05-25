@@ -92,6 +92,13 @@ Why do you think the interface does not show the views you created?
 Because we created "regular" views instead of "secure" views.
 
 
+Who could you share your new Outbound Share with?
+a) I could share it with Martín Rojas at World Data Emporium (SE59172).
+b) I could share it with any account on Azure Canada Central (Toronto) -- if they told me their Account Locator.
+c) I could share it with other people taking this course - if they told me their Account Locator.
+d) I could share it with anyone, even people with no Snowflake Account -- if I set them up with something called a "Reader Account"
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
