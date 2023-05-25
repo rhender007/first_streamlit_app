@@ -76,7 +76,10 @@ Someone else will maintain it over time and keep it fresh
 Someone else will pay to store it
 You will only pay to query it
 
-
+What are the names of the 3 Snowflake Sharing Technologies?
+Direct Sharing
+Snowflake Data Marketplace
+Private Exchanges
 
 
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
