@@ -45,7 +45,9 @@ select current_region();
 Every Snowflake account has THE SNOWFLAKE database included in the account
 It is good to be aware that another name for "THE SNOWFLAKE database" is "the Account Usage Share." 
 
-
+no ddl statements on inbound shares
+inbound shares import permissions and revoke
+inbound shares no updates inserts or deletes
 
 What changes appear on the Shared Data screen because we have dropped the SNOWFLAKE_SAMPLE_DATA database?
 Select 2.
