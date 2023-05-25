@@ -118,6 +118,19 @@ When a USER is created, it provides access to a single ACCOUNT, but an ACCOUNT c
 Each learner in this Workshop should have a USER they use to log in to a Snowflake Trial ACCOUNT.
 
 
+Which of the following are true about sub-accounts (also called Managed Accounts or Reader Accounts)?
+Select 4.
+I can create a "sub-account" to my Snowflake Trial Account. This is different than just creating a Login/User for my Trial Snowflake Account.
+When I create the sub-account it gets its own Account Locator and URL.
+I should note both of my account URLs so I can recall which is my trial account and which is the sub-account I manage.
+I can create logins or USERS for the sub-account. If I don't write down the User and Password I create for my sub-account login, I don't have any way to retrieve it.
+
+
+
+
+
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
