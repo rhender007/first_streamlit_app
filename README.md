@@ -88,6 +88,10 @@ Because I don't have the rights to share the data.
 Because you can't share a share
 
 
+Why do you think the interface does not show the views you created?
+Because we created "regular" views instead of "secure" views.
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
