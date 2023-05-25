@@ -99,6 +99,10 @@ c) I could share it with other people taking this course - if they told me their
 d) I could share it with anyone, even people with no Snowflake Account -- if I set them up with something called a "Reader Account"
 
 
+If thousands of learners who go through this workshop, and all of them share their Outbound Shares with Martín, will Martín's Database list be impossible to navigate?
+No, because Inbound shares (for Martín they are inbound) only show on the list of databases if Martín decides to "get" them.
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
