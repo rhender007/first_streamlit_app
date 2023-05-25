@@ -110,6 +110,14 @@ If thousands of learners who go through this workshop, and all of them share the
 No, because Inbound shares (for Martín they are inbound) only show on the list of databases if Martín decides to "get" them.
 
 
+We often use the words ACCOUNT and USER as if they are interchangeable words. In Snowflake, it is important to keep them separate. Look at the statements below and select the ones that are TRUE.
+Select 4.
+A Snowflake Trial Account is an ACCOUNT, not a USER.
+The name and password entered during the login process is a USER, not an ACCOUNT.
+When a USER is created, it provides access to a single ACCOUNT, but an ACCOUNT can have many USERS.
+Each learner in this Workshop should have a USER they use to log in to a Snowflake Trial ACCOUNT.
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
