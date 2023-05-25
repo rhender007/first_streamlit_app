@@ -28,6 +28,14 @@ as 'https://awy6hshxy4.execute-api.us-west-2.amazonaws.com/dev/edu_dora/grader'
 ; 
 
 
+-- set your worksheet drop lists to the location of your GRADER function
+--DO NOT EDIT BELOW THIS LINE - Don't add or take away spaces, do change 'from' to 'FROM' - NO EDITS AT ALL
+select GRADER(step,(actual = expected), actual, expected, description) as graded_results from (
+SELECT 'DORA_IS_WORKING' as step
+ ,(select 223 ) as actual
+ ,223 as expected
+ ,'Dora is working!' as description
+); 
 
 
 
