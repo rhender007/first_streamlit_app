@@ -101,6 +101,11 @@ c) I could share it with other people taking this course - if they told me their
 d) I could share it with anyone, even people with no Snowflake Account -- if I set them up with something called a "Reader Account"
 
 
+Why couldn't the view that includes the NATIONS table be added to the share?
+Because the NATIONS table comes from an Inbound Share (SNOWFLAKE_SAMPLE_DATA)
+Because you can't share a share.
+
+
 If thousands of learners who go through this workshop, and all of them share their Outbound Shares with Martín, will Martín's Database list be impossible to navigate?
 No, because Inbound shares (for Martín they are inbound) only show on the list of databases if Martín decides to "get" them.
 
