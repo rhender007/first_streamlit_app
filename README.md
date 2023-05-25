@@ -49,6 +49,8 @@ no ddl statements on inbound shares
 inbound shares import permissions and revoke
 inbound shares no updates inserts or deletes
 
+The Account Usage Share is weird because you can't drop or rename it like other inbound shares.
+
 What changes appear on the Shared Data screen because we have dropped the SNOWFLAKE_SAMPLE_DATA database?
 Select 2.
 Two tiles still appear, but one has a download button.
