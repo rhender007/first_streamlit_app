@@ -81,6 +81,12 @@ Direct Sharing
 Snowflake Data Marketplace
 Private Exchanges
 
+Why do you think the SNOWFLAKE and SNOWFLAKE_SAMPLE_DATA databases did not show up on the list during your share creation process?
+Select 2.
+
+Because I don't have the rights to share the data.
+Because you can't share a share
+
 
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
