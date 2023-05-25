@@ -127,7 +127,9 @@ I can create logins or USERS for the sub-account. If I don't write down the User
 
 
 
-
+How is the managed sub-account different than the trial account?
+There's no SNOWFLAKE_SAMPLE_DATA database set up in advance.
+There's no COMPUTE_WH warehouse set up in advance.
 
 
 
