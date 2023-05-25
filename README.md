@@ -14,7 +14,7 @@ api_allowed_prefixes = ('https://awy6hshxy4.execute-api.us-west-2.amazonaws.com/
 
 GRADER FUNCTION
 
- use role accountadmin;  
+use role accountadmin;  
 create or replace external function demo_db.public.grader(
       step varchar
     , passed boolean
