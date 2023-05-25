@@ -42,6 +42,17 @@ SELECT 'DORA_IS_WORKING' as step
 select current_region();
 
 
+--Here's code to recreate the "Like a Window" Stage in the DEMO_DB. You can just use the stage from GARDEN_PLANTS if you are using the same Trial account from an earlier workout. 
+create stage demo_db.public.like_a_window_into_an_s3_bucket
+url = 's3://uni-lab-files';
+
+--And here's a reminder of the syntax for COPY INTO:
+copy into my_table_name
+from @demo_db.public.like_a_window_into_an_s3_bucket
+files = ( 'IF_I_HAD_A_FILE_LIKE_THIS.txt')
+file_format = ( format_name='EXAMPLE_FILEFORMAT' );
+
+
 Every Snowflake account has THE SNOWFLAKE database included in the account
 It is good to be aware that another name for "THE SNOWFLAKE database" is "the Account Usage Share." 
 
