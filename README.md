@@ -133,6 +133,48 @@ There's no COMPUTE_WH warehouse set up in advance.
 
 
 
+
+
+structured unstructured semi
+any data file with data arranged in rows and columns (and no nesting) is called "structured data" and we often load each value into a column and each line into a row in our Snowflake tables
+Semi-Structured data (in a file like .json, or .xml)  is data that has unpredictable levels of nesting and often each "row" of data can vary widely in the information it contains. Semi-structured data stored in a flat file may have markup using angle brackets (like XML) or curly brackets (like JSON). Snowflake can load and process common nested data types like JSON, XML, Avro, Parquet, and ORC. Each of the semi-structured data types is loaded into Snowflake tables using a column data type called VARIANT.  A VARIANT column might contain many key-value pairs and multiple nested records and it will also keep the markup symbols like curly braces and angle brackets. 
+There is a third type of data file called Unstructured data. (File names will have extensions like .mp3, .mp4, .png, etc.)  Snowflake added support for Unstructured Data in August of 2021. Snowflake has ways to help you store, access, process, manage, govern, and share unstructured data. Videos, images, audio files, pdfs and other file types are considered unstructured data.
+
+
+
+We already know that in the wider world of Data Warehousing, we can use the word "stage" to mean "a temporary storage location", and we can also use "stage" to mean a cloud folder where data is stored -- but now, more than ever, we should open our mind to the idea that a defined Snowflake Stage Object is most accurately thought of as a named gateway into a cloud folder where, presumably, data files are stored either short OR long term. 
+
+Name the 3 structural data types Snowflake can manage.
+List the 5 semi-structured data types Snowflake can load into VARIANT columns in tables.
+Name a few examples of unstructured file types (HINT: the 90s tracksuit file is unstructured data)
+Describe the function of Snowflake Stage Objects. (e.g. Is it a location? Is it temporary?)
+
+
+ Query Data in the ZMD stage
+dot copy symbol
+
+select $1
+from @uni_klaus_zmd; 
+
+Snowflake hasn't been told anything about how the data in these files is structured so it's just making assumptions.  Snowflake is presuming that the files are CSVs because CSVs are a very popular file-formatting choice. It's also presuming each row ends with CRLF (Carriage Return Line Feed) because CRLF is also very common as a row delimiter.
+Snowflake hedges its bets and presumes if you don't tell it anything about your file, the file is probably a standard CSV.
+By using these assumptions, Snowflake treats the product_coordination_suggestions.txt file as if it only has one column and one row. 
+
+
+
+
+
+create file format zmd_file_format_3
+FIELD_DELIMITER = '='
+RECORD_DELIMITER = '^'; 
+
+select $1, $2
+from @uni_klaus_zmd/product_coordination_suggestions.txt
+(file_format => zmd_file_format_3);
+
+
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
