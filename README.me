@@ -249,7 +249,9 @@ A Materialized View no
 
 
 
-
+create secure materialized view SMV_CHERRY_CREEK_TRAIL
+    -- comment = '<comment>'
+    as select * from T_CHERRY_CREEK_TRAIL ;
 
 
 Well, we left out an important detail. You CAN put a Materialized View over an External Table, even if that External Table is based on a Stage!!
