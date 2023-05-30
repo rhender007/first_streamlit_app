@@ -229,6 +229,18 @@ CREATE or replace FUNCTION distance_to_mc(loc_lat number(38,32), loc_lng number(
   ;
 
 
+
+A Materialized View is like a view that is frozen in place (more or less looks and acts like a table).
+The big difference is that if some part of the underlying data changes,  Snowflake recognizes the need to refresh it, automatically.
+People often choose to create a materialized view if they have a view with intensive logic that they query often but that does NOT change often.  We can't use a Materialized view on any of our trails data because you can't put a materialized view directly on top of staged data. 
+
+
+
+
+
+
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
