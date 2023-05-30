@@ -216,6 +216,19 @@ set mc_lat='-104.97300245114094';
 set mc_lng='39.76471253574085';
 
 
+--Filling in the Function Code
+CREATE or replace FUNCTION distance_to_mc(loc_lat number(38,32), loc_lng number(38,32))
+  RETURNS FLOAT
+  AS
+  $$
+    st_distance(
+        st_makepoint('-104.97300245114094','39.76471253574085')
+        ,st_makepoint(loc_lat,loc_lng)
+        )
+  $$
+  ;
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
