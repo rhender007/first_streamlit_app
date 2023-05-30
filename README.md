@@ -175,6 +175,13 @@ from @uni_klaus_zmd/product_coordination_suggestions.txt
 
 
 
+
+create or replace file format zmd_file_format_3
+FIELD_DELIMITER = '='
+RECORD_DELIMITER = '^'; 
+
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
