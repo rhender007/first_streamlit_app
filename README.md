@@ -182,6 +182,29 @@ RECORD_DELIMITER = '^';
 
 
 
+
+
+
+ "Data Lake." The Data Lake metaphor was introduced to the world in 2011 by James Dixon, who was the Chief Technology Officer for a company called Pentaho, at that time.
+
+Dixon said:
+
+If you think of a data mart as a store of bottled water -- cleansed and packaged and structured for easy consumption -- the data lake is a large body of water in a more natural state. The contents of the data lake stream in from a source to fill the lake, and various users of the lake can come to examine, dive in, or take samples.
+When we talk about Data Lakes at Snowflake, we tend to mean data that has not been loaded into traditional Snowflake tables. We might also call these traditional tables "native" Snowflake tables, or "regular" tables. 
+
+As we've already seen, Structured and Semi-structured data that is sitting outside of Snowflake can be easily accessed and analyzed using familiar Snowflake tools like views, file formats, and SQL queries. 
+
+We've also seen how Unstructured data, not loaded into Snowflake, can be accessed with a special Snowflake tool called a Directory Table. We've also seen how Directory Tables can be used in combination with functions, joins, internal tables, and standard views to access that non-loaded data. 
+
+And through all this, we've seen that bringing together loaded and non-loaded data is a simple and seamless process.  When some data is loaded and some is left in a non-loaded state the two types can be joined and queried together, this is sometimes referred to as a Data Lakehouse. 
+
+
+
+
+
+
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
