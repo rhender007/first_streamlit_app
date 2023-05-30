@@ -201,7 +201,7 @@ And through all this, we've seen that bringing together loaded and non-loaded da
 
 
 
-
+data lakes focuses more specifically on one of the WHEREs. In this case, the WHERE is external. The WHERE is external to Snowflake's native tables. 
 
 
 
