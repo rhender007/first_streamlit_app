@@ -181,7 +181,8 @@ FIELD_DELIMITER = '='
 RECORD_DELIMITER = '^'; 
 
 
-
+When we talk about Data Lakes in Snowflake, what do we mean?
+Data that is left outside of Snowflake but can be accessed using Snowflake tools.
 
 
 
