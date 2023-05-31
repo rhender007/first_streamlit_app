@@ -340,6 +340,15 @@ Because that's the time zone for San Mateo, California, USA.
 alter session set timezone = 'UTC';
 select current_timestamp();
 
+The DATETIME field of the LOGS has a Z at the end. Assuming it is valid time zone information, what does it tell us about the time zone of the data?
+Select all that apply.
+The timestamp data is currently in the Zulu time zone (zero offset from the Prime Meridian).
+The timestamp data is currently in the base (zero offset) GMT timezone.
+The timestamp data is currently in the base (zero offset) UTC timezone.
+
+
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
