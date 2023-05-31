@@ -336,6 +336,10 @@ Every Snowflake Account's time zone is initially set to UTC-7. What do we sugges
 Because that's the time zone for San Mateo, California, USA.
 
 
+--worksheets are sometimes called sessions -- we'll be changing the worksheet time zone
+alter session set timezone = 'UTC';
+select current_timestamp();
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
