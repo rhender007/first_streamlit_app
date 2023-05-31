@@ -327,6 +327,11 @@ data engineer use sysadmin role for almost everything
 A data warehouse typically stores data in a predetermined organization with a schema. A data lake does not have a predetermined schema. Also, whereas a data warehouse usually stores structured data, a data lake stores structured and unstructured data. And a data warehouse, especially one where storage and compute workloads are separated by design, delivers far faster analytics and much higher concurrency.
 
 
+
+When writing a COPY INTO statement, what happens if you only use the name of the stage (or stage/folder) on the FROM line?
+Snowflake will attempt to load all the files in the stage (or the stage/folder location)
+
+
 Other courses and information sources are available and may be a better fit for your needs and preferences. 
 
 For non-hands on courses and certification preparation guides, see other courses on this site. 
